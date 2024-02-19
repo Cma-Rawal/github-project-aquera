@@ -15,7 +15,7 @@ export class RepoListComponent implements OnInit {
     repos = <any>[];
     subRepos = <any>[];
     repoSubscription!: Subscription;
-    MAX_ITEMS_PER_PAGE = 1;
+    MAX_ITEMS_PER_PAGE = 10;
     lowValue: number = 0;
     highValue: number = this.MAX_ITEMS_PER_PAGE;
 
