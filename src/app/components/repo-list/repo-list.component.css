@@ -1,0 +1,14 @@
+.repo-container {
+    padding: 10px;
+}
+
+.repo-card {
+    border-top: #D3D3D3 solid;
+    border-bottom: #D3D3D3 solid;
+    margin: 15px 0;
+    height: 100px;
+}
+
+.repo-card-content {
+    padding-left: 16px;
+}

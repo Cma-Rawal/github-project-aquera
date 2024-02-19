@@ -1,0 +1,26 @@
+<div fxLayout="cloumn" fxLayout.xs="row">
+    <div fxFlex="30%">
+        <mat-card class="profile-card">
+            <img class="profile-img" src="{{profileDetails?.avatar_url}}">
+            <mat-card-header>
+                <mat-card-title>{{profileDetails?.name}}</mat-card-title>
+                <mat-card-subtitle>{{profileDetails?.login}}</mat-card-subtitle>
+            </mat-card-header>
+            <mat-card-content class="pl-16">
+                <p fxLayout.gt-xs="row" fxLayout.xs="column">
+                    <label fxFlex="30%">Bio</label>
+                    <span fxFlex="80%">{{profileDetails?.bio}}</span>
+                </p>
+            
+                <p fxLayout.gt-xs="row" fxLayout.xs="column">
+                    <label fxFlex="30%">#Repos</label>
+                    <span fxFlex="80%">{{reposCount}}</span>
+                </p>
+            </mat-card-content>
+        </mat-card>
+        
+    </div>
+    <div fxFlexOffset="20px" fxFlex="70%">
+        <app-repo-list [userId]="userId" (repoCountFetched)="updateRepoCount($event)"></app-repo-list>
+    </div>
+</div>
