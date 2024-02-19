@@ -8,5 +8,5 @@ Run `npm install`
 
 ## Development server
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/profile?userId=<github-user-id>`
-where <github-user-id> is any valid github user-id
+where `<github-user-id>` is any valid github user-id
 
