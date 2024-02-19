@@ -7,6 +7,6 @@ Node version - v14.21.3
 Run `npm install`
 
 ## Development server
-Run `ng start` for a dev server. Navigate to `http://localhost:4200/profile?userId=<github-user-id>`
+Run `npm start`. Navigate to `http://localhost:4200/profile?userId=<github-user-id>`
 where `<github-user-id>` is any valid github user-id
 
